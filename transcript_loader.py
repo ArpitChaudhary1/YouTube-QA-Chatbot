@@ -20,4 +20,3 @@ splitter = RecursiveCharacterTextSplitter(
 )
 
 chunk = splitter.create_documents([transcript])
-# print(chunk)

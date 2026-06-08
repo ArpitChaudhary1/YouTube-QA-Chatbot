@@ -1,11 +1,10 @@
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
-load_dotenv()
 from vector_store import retriever
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableLambda,RunnableParallel,RunnablePassthrough
-
+load_dotenv()
 
 # to build the context
 def format_docs(retrieved_docs):
